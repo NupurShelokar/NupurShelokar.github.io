@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d11df72bea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark headr" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars headr" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer/Coder</p>
+                <h1>Hi, I am <span>Nupur</span><br><span class="intro">Currently pursuing a Bachelor's degree in Information Technology at <br> Pune Institute of Computer Technology.</span> </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/nupur.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a fresher, and as a software developer, I have an experience in Adobe as summer product intern last year. I give my best to grow the standard of the company and myself, through my skills, experience and qualifications.
+                        My proficiency in Java and C++, coupled with hands-on experience gained during internships, reflects my commitment to translating theoretical knowledge into practical solutions.<br>  As a dynamic and results-driven final year engineering student, I possess a solid foundation in key areas such as Data Structures, Algorithms, Object-Oriented Programming, Database Management, and Operating Systems,
+                        adept at utilising version control systems like GitHub. I am eager to contribute my skills and enthusiasm to a dynamic team.
+                        By hiring me, you'll be gaining a dedicated and enthusiastic team member who is ready to learn, work ethic, hardworking and grow with your organisation. I'm excited about the opportunity to contribute to your team's success and make a positive impact.
+                        </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Developing websites using HTML, CSS, Bootsrap and Javascript.</li>
+                        </ul>
+                        <ul>
+                            <li><span>App Development</span><br>Developing Android appliactions using Java, Kotlin in Android Studio.</li>
+                        </ul>
+                        <ul>
+                            <li><span>Machine Learning</span><br>Developing projects based on Face Recognition Technology usimg Python.</li>
+                        </ul>
+                        <ul>
+                            <li><span>Core Concepts</span><br>•Object Oriented Programming •Data Structures and Algorithms •Database and Management System
+                                •Operating System •Machine Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Current</span><br>Pune Institute of Computer Technology <span class="edu">CGPA: 8.9</span></li>
+                        </ul>
+                        <ul>
+                            <li><span>2018-2020</span><br>S.F.L. Highschool and Junior College <span class="edu">HSC Perc: 95.54%</span></li>
+                        </ul>
+                        <ul>
+                            <li><span>2012-2018</span><br>Hirabai Goenka Kanya Vidyalaya <span class="edu">SSC Perc: 98.40%</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Adobe</span><br><span class="edu">June 2023-Aug 2023</span></li>
+                            <p>Spearheaded the development of innovative features for Photoshop Express Android app, enabling users to seamlessly integrate GIF stickers into their photo editing experience.
+                                <br>Contributed significantly to enhancing user engagement and creative expression within the application.
+                               <br> Collaborated with cross-functional teams to ensure seamless integration and functionality.
+                               <br> Demonstrated strong problem-solving skills and adaptability in a dynamic software development environment.</p>
+                               <span class="highlight">Technologies Used:</span>
+                               <p>Java, Kotlin, C++, MVVM, XML</p>
+                               <span class="highlight">Tools Used:</span>
+                               <p>Android Studio, Github, Sourcetree</p>
+                               <a href="https://drive.google.com/file/d/12gfKBY3h2tqldzow7Bv5ws_w3jWbqXQI/view?usp=sharing">Certificate</a>
+
+                        </ul>
+                        <ul>
+                            <li><span>Code Clause </span><br><span class="edu">Feb 2023-Mar 2023</span></li>
+                            <p>Played a pivotal role in the development of a dynamic and feature-rich e-commerce website, contributing to its design, functionality, and overall user experience. The project aimed to create a seamless online shopping platform, enhancing the company's digital presence and customer engagement.
+                            <br>Developed responsive and visually appealing user interfaces using HTML, CSS, and JavaScript, ensuring a consistent and enjoyable shopping experience across various devices.
+                            <br>Integrated third-party APIs for payment gateways, ensuring secure and seamless online transactions for customers.
+                            <br>Designed and implemented a database schema using technology MySQL to efficiently store and retrieve product information, user profiles, and order details.</p>
+                            <span class="highlight">Technologies Used:</span>
+                               <p>Html, Css, JavaScript </p>
+                               <span class="highlight">Tools Used:</span>
+                               <p>Visual Studio Code, Github</p>
+                            <a href="https://drive.google.com/file/d/19s4qZ9Sy6vKij--pcKRZ-nOExrKzN7o5/view?usp=sharing">Certificate</a>
+
+
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+            <!-- <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea pariatur eligendi consectetur facere repellendus quis repudiandae minima sunt ratione tempore.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea pariatur eligendi consectetur facere repellendus quis repudiandae minima sunt ratione tempore.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea pariatur eligendi consectetur facere repellendus quis repudiandae minima sunt ratione tempore.</p>
+                <a href="#">Learn More</a>
+            </div> -->
+            <h2>JAVA, C++, Python, GitHub, Object Oriented Programming, Data Structure and Algorithms, Operating System</h2>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- -----------portfolio------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/web.jpeg">
+                    <div class="layer">
+                        <h3> FARM-HUT</h3>
+                        <p>Web Application</p>
+                        <a href="https://github.com/NupurShelokar/farm_hut"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/android.png">
+                    <div class="layer">
+                        <h3>NEWS APP</h3>
+                        <p>Android Application</p>
+                        <a href="https://drive.google.com/drive/folders/1ozllo89QkfVWH8lfY0TfNfUAOPfcyHzp?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/face3.jpeg">
+                    <div class="layer">
+                        <h3>FACE RECOGNITION TECHNOLOGY FOR IDENTIFYING
+                            MISSING INDIVIDUALS AND WANTED CRIMINALS</h3>
+                        <p>Machine Learning Project</p>
+                        <a href="https://drive.google.com/file/d/1xxcmaykotv7TuErL1pD1o_0VjsMRZuqb/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ----------contact---------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>nupurshelokar@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9373546855</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a> 
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Nupur_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 0 Nupur. Made with<i class="fa-solid fa-heart"></i></p>
+        </div>
+    
+    </div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzWb8j1Zt7O8nOQniIo044kly-ZgrrFg07WFcjE-S_NlUkgWJpnbOs8NKN9arxfel_uyA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
